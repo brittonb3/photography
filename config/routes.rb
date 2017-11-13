@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :welcome
+  get "welcome/about"
   resources :posts
 
   root 'welcome#index'
