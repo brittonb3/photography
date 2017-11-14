@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.2'
 gem 'activeadmin'
+gem 'active_skin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
