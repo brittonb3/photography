@@ -1,2 +1,6 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<header class="container">
+  <h1 class="text-center">Blog Posts</h1>
+  <% @posts.each do |post| %>
+   <p><%= link_to post.title, post %></p>
+ <% end %>
+</header>
