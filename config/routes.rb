@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
-  get "welcome/about"
   resources :posts
+
+  get 'about' => 'welcome#about'
+  get 'contact' => 'welcome#contact'
 
   root 'welcome#index'
 

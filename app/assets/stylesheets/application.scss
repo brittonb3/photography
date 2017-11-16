@@ -15,3 +15,15 @@
  */
  @import "bootstrap-sprockets";
   @import "bootstrap";
+
+  a, a:link, a:visited {
+    color: #38678b;
+    text-decoration: none;
+  }
+
+#nav-brand:hover,
+#nav-about:hover,
+#nav-contact:hover,
+#nav-blog:hover {
+  opacity: 0.5;
+}
