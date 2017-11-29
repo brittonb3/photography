@@ -13,71 +13,19 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
-  @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 ///////////// Navbar ////////////////
-  a, a:link, a:visited {
-    text-decoration: none;
-  }
-  ul.nav { margin-bottom: 0 !important; }
-
 .navbar {
-  background: transparent;
-  border-bottom: none;
-}
-
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a {
-  color: #fff;
-  text-align: center;
-}
-
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-toggle:hover span {
-  opacity: 0.4;
-}
-
-.navbar-toggle {
-  border: none;
-  box-shadow: none;
-  padding: 18px 18px 24px 18px;
   margin: 0;
+  
 }
 
-.navbar-toggle span:first-child {
-  margin-bottom: 6px;
-}
 
-button:not(.disabled):hover,
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-  background-color: transparent !important;
-  background-image: none;
-  box-shadow: none;
-}
 
-#x-one {
-  transform: rotate(135deg);
-  transform-origin: 50% 300%;
-  margin-bottom: 0;
-}
 
-#x-two {
-    transform: rotate(-135deg);
-    transform-origin: 61% 80%;
-}
-
-/////////// Media Queries for navbar /////////////
-@media (max-width: 768px) {
-
-  .navbar-inverse .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.1)
-  }
-
-  .navbar-inverse .navbar-nav > li > a:hover {
-    opacity: 0.4;
-  }
+///////////// Navbar media ///////////
+@media (min-width: 768px) {
 
  }

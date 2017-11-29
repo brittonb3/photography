@@ -16,3 +16,11 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+window.onload = function() {
+     let navButton = document.getElementById('navbar-button');
+
+     navButton.addEventListener('click', function(e) {
+       navButton.classList.toggle('close');
+     })
+ }
