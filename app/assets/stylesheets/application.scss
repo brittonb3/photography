@@ -45,7 +45,7 @@ div.container-fluid {
   float: right;
   height:50px;
   width: 60px;
-  margin-right: 5px;
+  margin-right: 10px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -105,9 +105,7 @@ div.container-fluid {
     margin: 0;
     text-align: center;
     background-color: rgba( 0, 0, 0, 0.2);
-  
   }
-
 
   a, a:link, a:visited {
     text-decoration: none;
@@ -124,11 +122,48 @@ div.container-fluid {
   }
 }
 
+.open {
+  display: none;
+}
 
 
 
 ///////////// Navbar media ///////////
 @media (min-width: 768px) {
+
+    #nav-ham {
+      display: none;
+    }
+
+    #nav-collapsed {
+      display: inline-block;
+      float: right;
+    }
+
+    .nav-links-list {
+      display: inline-block;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .nav-links-list li {
+      display: inline-block;
+    }
+
+     .nav-link {
+      display: inline-block;
+      padding: 15px;
+      margin-right: 5px;
+    }
+
+    a, a:link, a:visited {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-links-list .nav-link:hover {
+      opacity: 0.4;
+    }
 
 
  }

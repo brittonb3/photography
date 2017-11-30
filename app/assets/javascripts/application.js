@@ -23,7 +23,13 @@
    let navCol = document.getElementById('nav-collapsed');
    navHam.addEventListener('click', function(e) {
      this.classList.toggle('close');
+     navCol.classList.toggle('open');
      navCol.classList.toggle('collapsed');
    })
+
+
+   window.addEventListener("resize", function(event) {
+         
+     });
 
 });
