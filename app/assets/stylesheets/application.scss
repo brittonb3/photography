@@ -19,7 +19,109 @@
 ///////////// Navbar ////////////////
 .navbar {
   margin: 0;
+  border: none;
+}
+
+div.container-fluid {
+  padding: 0;
+}
+
+#header {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 10px;
+  width: auto;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#nav-ham {
+  position: relative;
+  float: right;
+  height:50px;
+  width: 60px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#header:hover,
+#nav-ham:hover {
+  opacity: 0.4;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  width: 37%;
+  left: 33%;
+  background: #fff;
+  border-radius: 50px;
+  transition: all cubic-bezier(0.45, 0.01, 0.44, 1.26) 0.45s;
+}
+
+.line1 {
+  top: 42%;
+}
+
+.line2 {
+  top: 58%;
+}
+
+
+#nav-ham.close .line1{
+  transform: rotate(135deg);
+  top: 49%;
+}
+
+#nav-ham.close .line2 {
+  transform: rotate(45deg);
+  top: 49%;
+}
+
+.close {
+  opacity: 1 !important;
+}
+
+.close:hover {
+  opacity: 0.4 !important;
+}
+
+
+.collapsed {
+  .nav-links-list {
+    display: block;
+    position: relative;
+    float: left;
+    clear: left;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: rgba( 0, 0, 0, 0.2);
   
+  }
+
+
+  a, a:link, a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-links-list .nav-link {
+    display: block;
+    padding: 10px;
+  }
+
+  .nav-links-list .nav-link:hover {
+    opacity: 0.4;
+  }
 }
 
 
@@ -27,5 +129,6 @@
 
 ///////////// Navbar media ///////////
 @media (min-width: 768px) {
+
 
  }

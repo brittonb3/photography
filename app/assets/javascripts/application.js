@@ -17,10 +17,13 @@
 //= require bootstrap
 //= require_tree .
 
-window.onload = function() {
-     let navButton = document.getElementById('navbar-button');
+ $(document).on('turbolinks:load', function() {
 
-     navButton.addEventListener('click', function(e) {
-       navButton.classList.toggle('close');
-     })
- }
+   let navHam = document.getElementById('nav-ham');
+   let navCol = document.getElementById('nav-collapsed');
+   navHam.addEventListener('click', function(e) {
+     this.classList.toggle('close');
+     navCol.classList.toggle('collapsed');
+   })
+
+});
