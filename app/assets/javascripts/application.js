@@ -19,13 +19,14 @@
 
  $(document).on('turbolinks:load', function() {
 
+  /////////// Navbar function /////////////
+
    let navHam = document.getElementById('nav-ham');
    let navCol = document.getElementById('nav-collapsed');
    navHam.addEventListener('click', function(e) {
      this.classList.toggle('close');
      navCol.classList.toggle('open');
    })
-
 
    window.addEventListener("resize", function(event) {
          if(window.innerWidth > 768 ) {
