@@ -24,12 +24,15 @@
    navHam.addEventListener('click', function(e) {
      this.classList.toggle('close');
      navCol.classList.toggle('open');
-     navCol.classList.toggle('collapsed');
    })
 
 
    window.addEventListener("resize", function(event) {
-         
+         if(window.innerWidth > 768 ) {
+           navCol.classList.remove('collapsed');
+         } else if (window.innerWidth < 768) {
+           navCol.classList.add('collapsed');
+         }
      });
 
 });
