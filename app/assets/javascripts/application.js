@@ -16,23 +16,3 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
-
- $(document).on('turbolinks:load', function() {
-
-   let navHam = document.getElementById('nav-ham');
-   let navCol = document.getElementById('nav-collapsed');
-   navHam.addEventListener('click', function(e) {
-     this.classList.toggle('close');
-     navCol.classList.toggle('open');
-   })
-
-
-   window.addEventListener("resize", function(event) {
-         if(window.innerWidth > 768 ) {
-           navCol.classList.remove('collapsed');
-         } else if (window.innerWidth < 768) {
-           navCol.classList.add('collapsed');
-         }
-     });
-
-});
