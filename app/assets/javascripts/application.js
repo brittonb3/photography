@@ -16,6 +16,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+<<<<<<< HEAD
 
  $(document).on('turbolinks:load', function() {
 
@@ -37,3 +38,5 @@
      });
 
 });
+=======
+>>>>>>> nav
