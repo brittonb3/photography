@@ -16,27 +16,20 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
-<<<<<<< HEAD
+
 
  $(document).on('turbolinks:load', function() {
 
   /////////// Navbar function /////////////
+let navbar = document.getElementById('nav');
+window.addEventListener("scroll", function(){
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   if (st > 320){
+       navbar.style.backgroundColor = "black";
+   } else if (st < 320) {
+      navbar.style.backgroundColor = "transparent";
+   }
+}, false);
 
-   let navHam = document.getElementById('nav-ham');
-   let navCol = document.getElementById('nav-collapsed');
-   navHam.addEventListener('click', function(e) {
-     this.classList.toggle('close');
-     navCol.classList.toggle('open');
-   })
-
-   window.addEventListener("resize", function(event) {
-         if(window.innerWidth > 768 ) {
-           navCol.classList.remove('collapsed');
-         } else if (window.innerWidth < 768) {
-           navCol.classList.add('collapsed');
-         }
-     });
 
 });
-=======
->>>>>>> nav
