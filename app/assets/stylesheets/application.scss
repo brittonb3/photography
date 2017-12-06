@@ -16,6 +16,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 ///////////// Navbar ////////////////
 .navbar {
   margin: 0;
@@ -172,22 +173,6 @@
   display:none
 }
 
-///////////// Navbar media ///////////
-@media (min-width: 768px) {
-
-
-    .collapse {
-      background-color: transparent;
-    }
-    #nav-ham {
-      display: none;
-    }
-
-}
-
-
-
-
 .navbar-toggle {
   border: none;
   background: transparent !important;
@@ -248,4 +233,24 @@
 
 .navbar-header button:active {
   box-shadow: none;
+}
+
+
+///////////// Navbar media ///////////
+@media (min-width: 768px) {
+
+
+    .collapse {
+      background-color: transparent;
+    }
+    #nav-ham {
+      display: none;
+    }
+
+}
+
+
+///////// footer /////////
+.footer {
+  background-color: red;
 }

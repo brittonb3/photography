@@ -23,9 +23,10 @@
   /////////// Navbar function /////////////
 let navbar = document.getElementById('nav');
 window.addEventListener("scroll", function(){
-   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   var st = window.pageYOffset || document.documentElement.scrollTop;
    if (st > 320){
-       navbar.style.backgroundColor = "black";
+       navbar.style.backgroundColor = "#000";
+       navbar.style.opacity = "0.8";
    } else if (st < 320) {
       navbar.style.backgroundColor = "transparent";
    }
