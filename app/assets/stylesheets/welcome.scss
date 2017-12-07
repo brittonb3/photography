@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+///////// Index Page ////////////
 .parallax {
     /* The image used */
     background-image: url("intro-bg.jpg");
@@ -28,12 +30,16 @@
   margin-bottom: 0;
 }
 
+
+
+//////// About Page ///////////
 .about {
   /* The image used */
   background-image: url("intro-bg.jpg");
 
   // /* Set a specific height */
   height: 768px;
+  color: #fff;
 
 
 
@@ -58,7 +64,14 @@
   margin-top: 2em;
 }
 
-////////// Media /////////////
+
+//////// Contact Page ////////////
+
+.heading {
+  border-bottom: solid 1px black;
+}
+
+////////// Media for welcome pages/////////////
 @media (max-width: 768px) {
 
   .about-info {
