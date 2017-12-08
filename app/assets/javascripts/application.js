@@ -21,7 +21,7 @@
  $(document).on('turbolinks:load', function() {
 
   /////////// Navbar function /////////////
-let navbar = document.getElementById('nav');
+var navbar = document.getElementById('nav');
 window.addEventListener("scroll", function(){
    var st = window.pageYOffset || document.documentElement.scrollTop;
    if (st > 320){
