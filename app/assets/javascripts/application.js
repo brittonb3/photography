@@ -20,17 +20,32 @@
 
  $(document).on('turbolinks:load', function() {
 
-  /////////// Navbar function /////////////
-var navbar = document.getElementById('nav');
-window.addEventListener("scroll", function(){
-   var st = window.pageYOffset || document.documentElement.scrollTop;
-   if (st > 320){
-       navbar.style.backgroundColor = "#000";
-       navbar.style.opacity = "0.8";
-   } else if (st < 320) {
-      navbar.style.backgroundColor = "transparent";
-   }
-}, false);
+      /////////// Navbar function /////////////
+    var navbar = document.getElementById('nav');
+    var navButton = document.getElementById('nav-ham');
+
+    window.addEventListener("scroll", function(){
+       var st = window.pageYOffset || document.documentElement.scrollTop;
+       if (st > 320){
+           navbar.style.backgroundColor = "#000";
+           navbar.style.opacity = "0.8";
+       } else if (st < 320) {
+          navbar.style.backgroundColor = "transparent";
+       }
+    }, false);
+
+    window.addEventListener("resize", function(){
+      var wSize = window.innerWidth;
+      if(wSize >= 768) {
+        navbar.classList.remove('dropdown');
+      } else if (wSize < 768  && navButton.className === 'navbar-toggle') {
+        navbar.classList.add('dropdown');
+      }
+    });
+
+    navButton.addEventListener("click", function(){
+      navbar.classList.toggle('dropdown');
+    });
 
 
 });
