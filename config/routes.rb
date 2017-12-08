@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   resources :posts
+  resources :contacts, only: [:new, :create]
 
   get 'about' => 'welcome#about'
   get 'contact' => 'welcome#contact'
