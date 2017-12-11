@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def contact
+  def portfolio
   end
 
   def about

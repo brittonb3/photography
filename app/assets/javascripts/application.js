@@ -44,6 +44,7 @@
     });
 
     navButton.addEventListener("click", function(){
+      
       navbar.classList.toggle('dropdown');
     });
 

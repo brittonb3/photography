@@ -140,6 +140,10 @@
   opacity: 0.8 !important;
 }
 
+.slow {
+  transition:.8s all;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
@@ -241,6 +245,9 @@
   box-shadow: none;
 }
 
+.navbar-right navbar-collapse collapse in {
+  opacity: 0.8;
+}
 
 ///////////// Navbar media ///////////
 @media (min-width: 768px) {

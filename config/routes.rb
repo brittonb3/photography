@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
   get 'about' => 'welcome#about'
-  get 'contact' => 'welcome#contact'
+  get 'portfolio' => 'welcome#portfolio'
 
   root 'welcome#index'
 
