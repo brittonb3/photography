@@ -26,10 +26,10 @@
 
     window.addEventListener("scroll", function(){
        var st = window.pageYOffset || document.documentElement.scrollTop;
-       if (st > 320){
+       if (st > 80){
            navbar.style.backgroundColor = "#000";
            navbar.style.opacity = "0.8";
-       } else if (st < 320) {
+       } else if (st < 80) {
           navbar.style.backgroundColor = "transparent";
        }
     }, false);
@@ -44,7 +44,7 @@
     });
 
     navButton.addEventListener("click", function(){
-      
+
       navbar.classList.toggle('dropdown');
     });
 

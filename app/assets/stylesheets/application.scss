@@ -17,6 +17,9 @@
 @import "bootstrap";
 @import "font-awesome";
 
+html, body{
+  background-color: #000;
+}
 
 ///////////// Navbar ////////////////
 .navbar {
@@ -137,7 +140,7 @@
 
 .dropdown {
   background-color: #000 !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important;
 }
 
 .slow {
@@ -246,7 +249,7 @@
 }
 
 .navbar-right navbar-collapse collapse in {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 ///////////// Navbar media ///////////
@@ -264,3 +267,7 @@
 
 
 ///////// footer /////////
+
+footer {
+  color: #fff;
+}

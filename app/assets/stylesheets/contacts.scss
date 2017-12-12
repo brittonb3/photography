@@ -1,3 +1,46 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//////// Contact Page ////////////
+
+.heading {
+  border-bottom: solid 1px #fff;
+}
+
+#contact {
+  margin-top: 6em;
+}
+
+.jumbotron {
+  background-color: #707375 !important;
+}
+
+h1 {
+  color: #fff !important;
+}
+
+.social {
+  margin: 8px;
+}
+
+.labels {
+  color: #fff;
+  margin-top: 1em;
+}
+
+.label-box {
+  border-radius: 8px !important;
+}
+
+.button {
+  background-color: black !important;
+  margin-top: 1em;
+  border-radius: 8px !important;
+}
+
+form input[type=submit]:hover, a.button:hover, a:link.button:hover, a:visited.button:hover,
+.button:focus {
+  opacity: 0.7;
+  background-color: black !important;
+}

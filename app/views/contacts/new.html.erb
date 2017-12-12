@@ -1,25 +1,25 @@
-<section class="container">
+<section class="container" id="contact">
   <div class="row">
     <div class="jumbotron">
       <div class="heading text-center">
         <h1>Contact</h1><br />
-        <a href="https://www.instagram.com/britt.baumann/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/BrittonB83" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/britt.baumann/" class="social" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/BrittonB83" class="social" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
       </div>
       <div class="text-center">
         <%= form_for @contact do |f| %>
-          <%= f.label :name %><br />
-          <%= f.text_field :name, required: true %>
+          <%= f.label :name, :class => 'labels' %><br />
+          <%= f.text_field :name, :class => 'label-box', required: true %>
 
           <br />
 
-          <%= f.label :email %><br />
-          <%= f.email_field :email, required: true %>
+          <%= f.label :email, :class => 'labels' %><br />
+          <%= f.email_field :email, :class => 'label-box', required: true %>
 
           <br />
 
-          <%= f.label :message %><br />
-          <%= f.text_area :message, as: :text %>
+          <%= f.label :message, :class => 'labels' %><br />
+          <%= f.text_area :message, :class => 'label-box', as: :text %>
 
           <br />
 
