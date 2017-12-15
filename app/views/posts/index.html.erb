@@ -2,5 +2,6 @@
   <h1 class="text-center">Blog Posts</h1>
   <% @posts.each do |post| %>
    <p><%= link_to post.title, post %></p>
+   <%= image_tag(post.image, :size => "260x180") %>
  <% end %>
 </header>
