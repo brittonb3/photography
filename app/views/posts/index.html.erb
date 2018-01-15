@@ -19,7 +19,10 @@
         <% @posts.each do |post| %>
           <div class="col-xs-12 col-sm-6 posts" >
             <h3><%= link_to post.title, post %></h3>
-            <%= image_tag(post.image, :class => "col-xs-12") %>
+              <%= image_tag(post.image, :class => "col-xs-12") %>
+            <p>
+              <%= post.body.truncate(150,separator: /\s/) %>
+            </p>
           </div>
         <% end %>
       </div>
