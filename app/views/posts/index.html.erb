@@ -1,7 +1,27 @@
-<header class="container">
+<header class="container blog-header">
   <h1 class="text-center">Blog Posts</h1>
-  <% @posts.each do |post| %>
-   <p><%= link_to post.title, post %></p>
-   <%= image_tag(post.image, :size => "260x180") %>
- <% end %>
-</header>
+  </header>
+  <!-- <% @posts.each do |post| %>
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h3><%= link_to post.title, post %></h3>
+        <%= image_tag(post.image, :class => "col-xs-12 col-sm-6") %>
+        <% end %>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section id="blog" class=" content-section text-center">
+    <div class="container-fluid">
+      <div class="row">
+        <% @posts.each do |post| %>
+          <div class="col-xs-12 col-sm-6 posts" >
+            <h3><%= link_to post.title, post %></h3>
+            <%= image_tag(post.image, :class => "col-xs-12") %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
