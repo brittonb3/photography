@@ -9,7 +9,7 @@ gem 'bootstrap-sass'
 gem 'devise', '~> 4.2'
 gem 'activeadmin'
 gem 'active_skin'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'paperclip', '~> 5.1.0'
 gem "font-awesome-rails"
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 group :production do
