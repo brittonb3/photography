@@ -48,9 +48,10 @@
       navbar.classList.toggle('dropdown');
     });
 
+    ///////////// portfolio function ///////////////
 
-
-
+  
+    }
 
 
 });
