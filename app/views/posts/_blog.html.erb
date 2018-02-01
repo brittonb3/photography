@@ -1,0 +1,18 @@
+<!-- Blog section -->
+
+
+<section id="blog" class=" content-section text-center">
+  <div class="container-fluid">
+    <div class="row">
+      <% @posts_home.each do |post| %>
+        <div class=" col-sm-4 posts" >
+          <h3><%= link_to post.title, post %></h3>
+            <%= link_to image_tag(post.image, :class => "col-xs-12"), post %>
+          <p>
+            <%= post.body.truncate(100,separator: /\s/) %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
