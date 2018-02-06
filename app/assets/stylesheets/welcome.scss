@@ -4,21 +4,6 @@
 
 
 ///////// Index Page ////////////
-// .parallax {
-//     /* The image used */
-//     background-image: url("intro-bg.jpg");
-//
-//     /* Set a specific height */
-//     min-height: 500px;
-//
-//
-//
-//     /* Create the parallax scrolling effect */
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: 100% 100%;
-// }
 
 .posts img {
   margin-bottom: 5px;
@@ -46,23 +31,26 @@
 }
 ///////// About /////////////
 
-.about {
-  // /* The image used */
-  //
-  //
-  background: url("Britt_b&w_com.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
+
+.about-img {
+  margin-top: 60px;
+  margin-bottom: 25px;
 }
 
-#about-info {
-  margin-top: 8em;
-  margin-left: 25px;
-  float: right;
-  color: #fff;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-head {
+  border-bottom: solid 1px #fff;
+  margin: 0 15px;
+  padding-bottom: 16px;
+}
+
+.about-p {
+  padding: 25px 25px 0 25px;
 }
 
 
@@ -127,17 +115,17 @@
 
 
 ////////// Media for welcome pages/////////////
-@media (min-width: 768px) {
+@media (max-width: 767px) {
 
   //////// About Page ///////////
 
 
-  .about h1 {
-    margin: 0;
+  .flex-container {
+    padding: 0px !important;
   }
 
-  .about-p {
-    margin-top: 2em;
+  .about-img {
+    padding: 0px !important;
   }
 
 
