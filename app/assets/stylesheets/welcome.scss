@@ -58,6 +58,27 @@
 
 /////////// Portfolio /////////
 
+.port-links-div {
+  margin-top: 60px;
+  padding: 0 40px !important;
+  background-color: #797e87;
+}
+
+#portfolio-head {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+
+}
+
+.port-link {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.port-link a {
+  padding: 5px 10px;
+}
+
 .port-header {
   margin-top: 80px;
 }
@@ -70,8 +91,8 @@
   padding: 25px !important;
 }
 
-#portfolio {
-  background-color: #252526;
+.portfolio-color {
+  background-color: #797e87;
 }
 
 #color-overlay {
