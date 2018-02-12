@@ -5,17 +5,6 @@
 
 ///////// Index Page ////////////
 
-.posts img {
-  margin-bottom: 5px;
-}
-
-.posts p {
-  padding: 1em;
-  border-bottom: 1px solid #c0c0c0;
-  margin-bottom: 0;
-}
-
-////////// Index /////////////
 
 #index-about {
   color: #fff;
@@ -28,6 +17,18 @@
 
 #blog {
   color: #fff;
+}
+
+.index-about-head {
+  border-bottom: solid 1px #fff;
+}
+
+.index-about-head h1 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.index-about-head p {
+  font-family: 'Playfair Display', serif;
 }
 ///////// About /////////////
 

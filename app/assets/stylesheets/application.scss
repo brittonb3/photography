@@ -221,7 +221,10 @@ html, body{
 footer {
   color: #fff;
   border-top: solid 1px #fff;
-  margin-top: 25px;
+}
+
+footer p {
+  font-family: 'Playfair Display', serif;
 }
 
 .foot-copyright {

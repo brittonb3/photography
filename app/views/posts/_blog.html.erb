@@ -4,15 +4,19 @@
 <section id="blog" class=" content-section text-center">
   <div class="container-fluid">
     <div class="row">
-      <% @posts_home.each do |post| %>
-        <div class=" col-sm-4 posts" >
-          <h3><%= link_to post.title, post %></h3>
-            <%= link_to image_tag(post.image, :class => "col-xs-12"), post %>
-          <p>
-            <%= post.body.truncate(100,separator: /\s/) %>
-          </p>
-        </div>
-      <% end %>
+      <div class="col-xs-12 blog-index-container">
+        <h2 class="col-xs-6 col-xs-offset-3 index-blog-header">Recent Blog Posts</h2>
+        <% @posts_home.each do |post| %>
+          <div class=" col-sm-4 posts" >
+            <h3><%= link_to post.title, post %></h3>
+              <%= link_to image_tag(post.image, :class => "col-xs-12"), post %>
+            <p>
+              <%= post.body.truncate(100,separator: /\s/) %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+
     </div>
   </div>
 </section>
