@@ -17,6 +17,7 @@
   margin: 0 15px;
   padding-bottom: 16px;
   border-bottom: solid 1px #fff;
+  font-family: 'Cinzel', serif;
 }
 
 .contact-social {
@@ -62,11 +63,15 @@ h1, h2, h3, h4, h5, p{
   font-size: 15px;
   padding: 5px;
   margin: 0;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
 }
 
 .labels {
   color: #fff;
   margin-top: 1em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
 }
 
 .label-box {
@@ -75,8 +80,9 @@ h1, h2, h3, h4, h5, p{
 
 .button {
   background-color: black !important;
-  margin-top: 1em;
+  margin: 1em 0;
   border-radius: 8px !important;
+  font-family: 'Cinzel', serif !important;
 }
 
 form input[type=submit]:hover, a.button:hover, a:link.button:hover, a:visited.button:hover,
@@ -84,6 +90,7 @@ form input[type=submit]:hover, a.button:hover, a:link.button:hover, a:visited.bu
   opacity: 0.7;
   background-color: black !important;
 }
+
 
 
 ////////// Contac Media Query //////////

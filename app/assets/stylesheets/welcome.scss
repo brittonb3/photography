@@ -29,7 +29,9 @@
 
 .index-about-head p {
   font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
 }
+
 ///////// About /////////////
 
 
@@ -48,10 +50,13 @@
   border-bottom: solid 1px #fff;
   margin: 0 15px;
   padding-bottom: 16px;
+  font-family: 'Cinzel', serif;
 }
 
 .about-p {
-  padding: 25px 25px 0 25px;
+  padding: 15px 25px 5px 25px;
+  font-family: 'Playfair Display', serif;
+  word-spacing: 1.5px;
 }
 
 
@@ -69,12 +74,13 @@
 #portfolio-head {
   padding-bottom: 10px;
   border-bottom: solid 1px #fff;
-
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .port-link {
   display: inline-block;
   margin: 5px 10px;
+  font-family: 'Cinzel', serif;
 }
 
 .port-link a {
