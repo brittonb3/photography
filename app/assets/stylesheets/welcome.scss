@@ -20,11 +20,18 @@
 }
 
 .index-about-head {
+  background-color: #797e87;
+}
+
+.index-about-head p {
   border-bottom: solid 1px #fff;
+  margin: 0 40px;
+  padding-bottom: 5px;
 }
 
 .index-about-head h1 {
   font-family: 'Cinzel Decorative', cursive;
+  margin-bottom: 2.5px;
 }
 
 .index-about-head p {
@@ -34,29 +41,33 @@
 
 ///////// About /////////////
 
-
-.about-img, .about-brand {
+.bio-img {
+  padding: 0 40px !important;
   margin-top: 60px;
-  margin-bottom: 25px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-img {
+  padding: 0 !important;
+}
+
+.bio-div {
+  padding: 0 40px !important;
 }
 
 .bio-head {
   border-bottom: solid 1px #fff;
-  margin: 0 15px;
-  padding-bottom: 16px;
+  padding: 7px 0;
   font-family: 'Cinzel', serif;
 }
 
 .about-p {
-  padding: 15px 25px 5px 25px;
+  padding: 15px 20px 5px 20px;
   font-family: 'Playfair Display', serif;
   word-spacing: 1.5px;
+}
+
+.about-brand {
+  padding: 0 !important;
 }
 
 
