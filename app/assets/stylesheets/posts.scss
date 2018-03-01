@@ -5,6 +5,7 @@
 //////index////////
 .posts img {
   margin-bottom: 5px;
+  padding: 0 !important;
 }
 
 .posts p {
@@ -37,10 +38,22 @@
   letter-spacing: 0.5px;
 }
 
+.posts {
+  border-bottom: solid 1px #fff;
+  padding: 0 !important;
+}
+
+.posts:last-child {
+  border-bottom: none;
+}
+
 .post-title {
   font-family: 'Cinzel', serif;
 }
 
+.blog-posts {
+  padding: 0 20px !important;
+}
 
 
 //////// Blog ///////////
@@ -48,6 +61,7 @@
 
 #blog-container {
   margin-top: 60px;
+  background-color: #797e87;
 }
 
 .blog-head {
@@ -60,6 +74,8 @@
 
 .blog-list {
   padding-bottom: 15px;
+  border-left: solid 1px rgba(255,255,255,0.3);
+  border-bottom: solid 1px rgba(255,255,255,0.3);
 }
 
 ///////////Media for blog pages ////////////
@@ -71,8 +87,12 @@
   border-bottom: 1px solid #fff;
 }
 
-.posts:last-child {
+.blog-list {
+  padding-bottom: 15px;
+  border-top: solid 1px #fff;
+  border-left: none;
   border-bottom: none;
 }
+
 
 }
