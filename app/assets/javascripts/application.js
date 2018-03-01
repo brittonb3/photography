@@ -26,9 +26,9 @@
 
     window.addEventListener("scroll", function(){
        var st = window.pageYOffset || document.documentElement.scrollTop;
-       if (st > 80){
+       if (st > 50){
            navbar.style.backgroundColor = "rgba(0,0,0, 0.8)";
-       } else if (st < 80) {
+       } else if (st < 50) {
           navbar.style.backgroundColor = "transparent";
        }
     }, false);

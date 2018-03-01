@@ -25,7 +25,7 @@
 
 .index-about-head p {
   border-bottom: solid 1px #fff;
-  margin: 0 40px;
+  margin: 0 30px;
   padding-bottom: 5px;
 }
 
@@ -41,27 +41,39 @@
 
 ///////// About /////////////
 
-.bio-img {
-  padding: 0 40px !important;
+.bio-container {
+  background-color: #797e87;
   margin-top: 60px;
+  padding: 0 40px !important;
+}
+
+.bio-top-header {
+  margin-top: 40px;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .about-img {
-  padding: 0 !important;
+  padding: 0 0 0 25px !important;
+  margin-top: -15px;
+  // margin-top: 70px;
+  // min-width: 500px;
+  // min-height: 295px;
 }
 
 .bio-div {
   padding: 0 40px !important;
+  margin-top: 50px;
 }
 
 .bio-head {
   border-bottom: solid 1px #fff;
   padding: 7px 0;
   font-family: 'Cinzel', serif;
+  margin: 0;
 }
 
 .about-p {
-  padding: 15px 20px 5px 20px;
+  margin-top: 15px;
   font-family: 'Playfair Display', serif;
   word-spacing: 1.5px;
 }
@@ -165,7 +177,12 @@
   }
 
   .about-img {
-    padding: 0px !important;
+    padding: 0 0 15px 0 !important;
+    margin-top: -15px;
+  }
+
+  .about-p {
+    padding-bottom: 10px;
   }
 
 
