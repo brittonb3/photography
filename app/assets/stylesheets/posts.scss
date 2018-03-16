@@ -5,7 +5,6 @@
 //////index////////
 .posts img {
   margin-bottom: 5px;
-  padding: 0 !important;
 }
 
 .posts p {
@@ -23,7 +22,7 @@
   background-color: #797e87;
 }
 
-.posts h3 {
+.posts h3, .posts-blog-page h3 {
   font-family: 'Cinzel', serif;
 }
 
@@ -31,20 +30,25 @@
   color: #fff !important;
 }
 
-.posts p {
+.posts p, .posts-blog-page p {
   font-family: 'Playfair Display', serif;
   color: #fff !important;
   word-spacing: 1.5px;
   letter-spacing: 0.5px;
 }
 
-.posts {
+.posts-blog-page {
   border-bottom: solid 1px #fff;
   padding: 0 !important;
+  margin-top: 10px;
 }
 
-.posts:last-child {
+.posts-blog-page:last-child {
   border-bottom: none;
+}
+
+.posts-blog-page img {
+  padding-bottom: 10px;
 }
 
 .post-title {

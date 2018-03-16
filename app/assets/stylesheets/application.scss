@@ -50,6 +50,7 @@ html, body{
   box-shadow: none;
   margin-top: 5px;
   font-family: 'Italianno', cursive;
+  transition: 1s;
 }
 
 #header:hover,
@@ -193,6 +194,7 @@ html, body{
 
   #header {
     font-size: 27px;
+    transition: 1s;
   }
 
 }
@@ -209,6 +211,7 @@ html, body{
 
     #header {
       font-size: 40px;
+      transition: 1s;
     }
 
 }
