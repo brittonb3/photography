@@ -21,11 +21,11 @@
  $(document).on('turbolinks:load', function() {
 
       /////////// Navbar function /////////////
-    var navbar = document.getElementById('nav');
-    var navButton = document.getElementById('nav-ham');
+    let navbar = document.getElementById('nav');
+    let navButton = document.getElementById('nav-ham');
 
     window.addEventListener("scroll", function(){
-       var st = window.pageYOffset || document.documentElement.scrollTop;
+       let st = window.pageYOffset || document.documentElement.scrollTop;
        if (st > 50){
            navbar.style.backgroundColor = "rgba(0,0,0, 0.8)";
        } else if (st < 50) {
@@ -34,7 +34,7 @@
     }, false);
 
     window.addEventListener("resize", function(){
-      var wSize = window.innerWidth;
+      let wSize = window.innerWidth;
       if(wSize >= 768) {
         navbar.classList.remove('dropdown');
       } else if (wSize < 768  && navButton.className === 'navbar-toggle') {
@@ -42,10 +42,14 @@
       }
     });
 
+
     navButton.addEventListener("click", function(){
 
       navbar.classList.toggle('dropdown');
     });
+
+
+
 
     ///////////// portfolio function ///////////////
 

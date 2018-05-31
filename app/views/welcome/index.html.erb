@@ -1,34 +1,16 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag("Split_rock.jpg", :alt => "gray") %>
-    </div>
 
-    <!-- <div class="item">
-      <%= image_tag("MSP_finished.jpg", :alt => "Minneapolis, MN") %>
-    </div>
-
-    <div class="item">
-      <%= image_tag("Skagway_finished.jpg", :alt => "Skagway, AK") %>
-    </div> -->
-
+<div class="newD">
+  <div class="buisness">
+    <a class="buisness-link" href="mailto:brittonbaumann@gmail.com">Buisness Inquiries</a>
+    <p class="buisness-p">
+      Photographer & <br class="break" />
+      Web Developer
+    </p>
   </div>
 </div>
-    <!-- About Section -->
-    <section id="index-about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 text-center index-about-head">
-            <h1>Britton Baumann</h1>
-            <p>My name is Britton Baumann. I am a photographer that is based in Minnesota.</p>
-        </div>
-      </div>
-    </section>
-    <section>
 
 
 
-    <!-- Blog section -->
+     <!-- Blog section -->
     <%= render "posts/blog" , locals: {post: @posts}%>

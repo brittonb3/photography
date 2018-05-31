@@ -40,22 +40,21 @@ html, body{
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 33px;
+  font-size: 25px;
   line-height: 20px;
-  margin-left: 10px;
   width: auto;
   text-decoration: none;
   color: #fff;
   background-color: transparent;
   box-shadow: none;
   margin-top: 5px;
-  font-family: 'Italianno', cursive;
-  transition: 1s;
+  font-family: 'Cinzel', serif;
+  transition: 0.7s;
 }
 
 #header:hover,
 #nav-ham:hover {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
   a, a:link, a:visited {
@@ -88,7 +87,7 @@ html, body{
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  opacity: 0.4;
+  opacity: 0.7;
   color: #fff;
 }
 
@@ -167,7 +166,6 @@ html, body{
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
-    margin-right: 22px;
     box-shadow: none;
     margin-top: 5px;
 }
@@ -193,8 +191,8 @@ html, body{
 @media (max-width: 480px) {
 
   #header {
-    font-size: 27px;
-    transition: 1s;
+    font-size: 20px;
+    transition: 0.7s;
   }
 
 }
@@ -210,8 +208,9 @@ html, body{
     }
 
     #header {
-      font-size: 40px;
-      transition: 1s;
+      font-size: 25px;
+      transition: 0.7s;
+      margin-left: 0;
     }
 
 }

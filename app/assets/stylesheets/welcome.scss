@@ -39,6 +39,43 @@
   letter-spacing: 0.5px;
 }
 
+.buisness {
+  position: absolute;
+  display: block;
+  height: 650px;
+  width: 50%;
+}
+
+.buisness-link {
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  margin-top: 300px;
+  margin-left: 18%;
+  color: #fff;
+  padding: 15px 30px;;
+  box-sizing: border-box;
+  border: 1.5px solid #fff;
+  transition: all .2s ease-in-out;
+}
+
+.buisness-link:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.buisness-p {
+  font-family: 'Playfair Display', serif;
+  margin-left: 14%;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+
+
+
+
+
 ///////// About /////////////
 
 .bio-container {
@@ -167,7 +204,29 @@
 
 
 ////////// Media for welcome pages/////////////
+@media (max-width: 480px) {
+
+  .buisness {
+    margin-top: 20px;
+  }
+
+  .buisness-link {
+    margin-left: 5%;
+    padding: 8px;
+  }
+
+}
 @media (max-width: 767px) {
+
+  ///////// index page ///////////
+
+  .buisness-link {
+    padding: 15px;
+  }
+
+  .buisness-p {
+    margin-left: 9%;
+  }
 
   //////// About Page ///////////
 
@@ -186,4 +245,19 @@
   }
 
 
+}
+
+
+//////////// New desing for index /////////////
+
+.newD {
+  background-image: url('Britt_b&w_com.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.85;
+  background-attachment: fixed;
 }
