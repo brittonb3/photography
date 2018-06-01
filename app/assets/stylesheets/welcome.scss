@@ -6,51 +6,72 @@
 ///////// Index Page ////////////
 
 
-#index-about {
-  color: #fff;
-}
+// #index-about {
+//   color: #fff;
+// }
+//
+// #social {
+//   margin: 30px 0px;
+//   color: #fff;
+// }
+//
+// #blog {
+//   color: #fff;
+// }
+//
+// .index-about-head {
+//   background-color: #797e87;
+// }
+//
+// .index-about-head p {
+//   border-bottom: solid 1px #fff;
+//   margin: 0 30px;
+//   padding-bottom: 5px;
+// }
+//
+// .index-about-head h1 {
+//   font-family: 'Cinzel Decorative', cursive;
+//   margin-bottom: 2.5px;
+// }
+//
+// .index-about-head p {
+//   font-family: 'Playfair Display', serif;
+//   letter-spacing: 0.5px;
+// }
 
-#social {
-  margin: 30px 0px;
-  color: #fff;
-}
-
-#blog {
-  color: #fff;
-}
-
-.index-about-head {
-  background-color: #797e87;
-}
-
-.index-about-head p {
-  border-bottom: solid 1px #fff;
-  margin: 0 30px;
-  padding-bottom: 5px;
-}
-
-.index-about-head h1 {
-  font-family: 'Cinzel Decorative', cursive;
-  margin-bottom: 2.5px;
-}
-
-.index-about-head p {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.5px;
+.newD {
+  background-image: url('Britt_b&w_com.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0.75;
 }
 
 .buisness {
   position: absolute;
   display: block;
-  height: 650px;
-  width: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.vert-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buisness-link {
   font-family: 'Playfair Display', serif;
   display: inline-block;
-  margin-top: 300px;
-  margin-left: 18%;
   color: #fff;
   padding: 15px 30px;;
   box-sizing: border-box;
@@ -66,11 +87,10 @@
 
 .buisness-p {
   font-family: 'Playfair Display', serif;
-  margin-left: 14%;
-  margin-top: 15px;
+  margin-left: 10%;
   font-size: 16px;
+  text-align: center;
 }
-
 
 
 
@@ -204,60 +224,45 @@
 
 
 ////////// Media for welcome pages/////////////
-@media (max-width: 480px) {
-
-  .buisness {
-    margin-top: 20px;
-  }
-
-  .buisness-link {
-    margin-left: 5%;
-    padding: 8px;
-  }
-
-}
-@media (max-width: 767px) {
+// @media (max-width: 480px) {
+//
+//   .buisness {
+//     margin-top: 20px;
+//   }
+//
+//   .buisness-link {
+//     margin-left: 5%;
+//     padding: 8px;
+//   }
+//
+// }
+// @media (max-width: 767px) {
 
   ///////// index page ///////////
 
-  .buisness-link {
-    padding: 15px;
-  }
-
-  .buisness-p {
-    margin-left: 9%;
-  }
+  // .buisness-link {
+  //   padding: 15px;
+  // }
+  //
+  // .buisness-p {
+  //   margin-left: 9%;
+  // }
 
   //////// About Page ///////////
 
 
-  .flex-container {
-    padding: 0px !important;
-  }
-
-  .about-img {
-    padding: 0 0 15px 0 !important;
-    margin-top: -15px;
-  }
-
-  .about-p {
-    padding-bottom: 10px;
-  }
-
-
-}
-
-
-//////////// New desing for index /////////////
-
-.newD {
-  background-image: url('Britt_b&w_com.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 650px;
-  margin: 0;
-  padding: 0;
-  opacity: 0.85;
-  background-attachment: fixed;
-}
+//   .flex-container {
+//     padding: 0px !important;
+//   }
+//
+//   .about-img {
+//     padding: 0 0 15px 0 !important;
+//     margin-top: -15px;
+//   }
+//
+//   .about-p {
+//     padding-bottom: 10px;
+//   }
+//
+//
+// }
