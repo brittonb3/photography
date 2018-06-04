@@ -6,41 +6,8 @@
 ///////// Index Page ////////////
 
 
-// #index-about {
-//   color: #fff;
-// }
-//
-// #social {
-//   margin: 30px 0px;
-//   color: #fff;
-// }
-//
-// #blog {
-//   color: #fff;
-// }
-//
-// .index-about-head {
-//   background-color: #797e87;
-// }
-//
-// .index-about-head p {
-//   border-bottom: solid 1px #fff;
-//   margin: 0 30px;
-//   padding-bottom: 5px;
-// }
-//
-// .index-about-head h1 {
-//   font-family: 'Cinzel Decorative', cursive;
-//   margin-bottom: 2.5px;
-// }
-//
-// .index-about-head p {
-//   font-family: 'Playfair Display', serif;
-//   letter-spacing: 0.5px;
-// }
-
-.newD {
-  background-image: url('Britt_b&w_com.jpg');
+.back-img {
+  background-image: url('_BMB4824.JPG');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,15 +16,18 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 .buisness {
   position: absolute;
   display: block;
   height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -84,6 +54,8 @@
   color: #000;
   transform: scale(1.05);
 }
+
+
 
 .buisness-p {
   font-family: 'Playfair Display', serif;
