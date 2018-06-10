@@ -50,6 +50,7 @@ html, body{
   margin-top: 5px;
   font-family: 'Cinzel', serif;
   transition: 0.7s;
+
 }
 
 #header:hover,
@@ -191,7 +192,7 @@ html, body{
 footer {
   color: #fff;
   border-top: solid 1px #fff;
-  position: absolute;
+  position: block;
   width: 100%;
   bottom: 0;
   background-color: inherit;

@@ -1,5 +1,5 @@
 <div class="back-img"></div>
-<div class="buisness">
+<section class="buisness">
   <div class="buis vert-center">
     <a class="buisness-link" href="mailto:brittonbaumann@gmail.com">Buisness Inquiries</a>
     <p class="buisness-p">
@@ -7,8 +7,21 @@
       Web Developer
     </p>
   </div>
-</div>
-
-
-     <!-- Blog section -->
-    <!-- <%= render "posts/blog" , locals: {post: @posts}%> -->
+</section>
+<section class="main-points">
+  <div class="points points-blog">
+    <%= link_to posts_path , :class => 'points-blog-link' do %>
+      <h5 class="link-head pull-right">Blog</h5>
+    <% end %>
+  </div>
+  <div class="points points-price">
+    <%= link_to about_path , :class => 'points-price-link' do %>
+      <h5 class="link-head pull-right">Price</h5>
+    <% end %>
+  </div>
+  <div class="points points-print">
+    <%= link_to posts_path , :class => 'points-print-link' do %>
+      <h5 class="link-head pull-right">Print</h5>
+    <% end %>
+  </div>
+</section>

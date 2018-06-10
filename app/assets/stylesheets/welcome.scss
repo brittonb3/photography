@@ -65,6 +65,59 @@
 }
 
 
+.main-points {
+  position: relative;
+  display: table;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.points {
+  display: block;
+  position: relative;
+  border: 2px solid #fff;
+  height: 50rem;
+}
+
+.points-blog {
+  background-image: url("Britt_b&w_cam1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.points-price {
+  background-image: url("Britt_b&w_com.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.points-print {
+  background-image: url("_BMB4824.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.points-blog-link,
+ .points-price-link,
+ .points-print-link {
+  display: block;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.link-head{
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #000 !important;
+  margin: 2rem;
+}
+
 
 
 
