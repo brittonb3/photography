@@ -7,7 +7,7 @@
 
 
 .back-img {
-  background-image: url('_BMB4824.JPG');
+  background-image: url('_BMB4824.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,12 +31,15 @@
   width: 100%;
 }
 
-.vert-center {
+.flex-container {
   min-height: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .buisness-link {
@@ -55,13 +58,26 @@
   transform: scale(1.05);
 }
 
+.social-links {
+  padding: 5px;
+  text-align: center;
+}
 
+.social {
+  margin: 5px;
+}
+
+.social:hover {
+  opacity: 0.6;
+}
 
 .buisness-p {
   font-family: 'Playfair Display', serif;
   margin-left: 10%;
   font-size: 16px;
   text-align: center;
+  margin: 0;
+  margin-top: 30px;
 }
 
 
@@ -96,7 +112,7 @@
 }
 
 .points-print {
-  background-image: url("_BMB4824.JPG");
+  background-image: url("_BMB4824.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -118,7 +134,45 @@
   margin: 2rem;
 }
 
+////////// Portfolio //////////
 
+.port-header {
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Cinzel', serif;
+  border-bottom: solid 1px #fff;
+}
+
+.port-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.port-links {
+  padding: 5px;
+}
+
+.port-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.port-column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.port-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.port-img {
+  width: 100%;
+}
 
 
 ///////// About /////////////
@@ -163,131 +217,3 @@
 .about-brand {
   padding: 0 !important;
 }
-
-
-
-
-
-/////////// Portfolio /////////
-
-.port-links-div {
-  margin-top: 60px;
-  padding: 0 40px !important;
-  background-color: #797e87;
-}
-
-#portfolio-head {
-  padding-bottom: 10px;
-  border-bottom: solid 1px #fff;
-  font-family: 'Cinzel Decorative', cursive;
-}
-
-.port-link {
-  display: inline-block;
-  margin: 5px 10px;
-  font-family: 'Cinzel', serif;
-}
-
-.port-link a {
-  padding: 5px 10px;
-}
-
-.port-header {
-  margin-top: 80px;
-}
-
-.port-image:hover {
-  opacity: 0.9;
-}
-
-#image-div > * {
-  padding: 25px !important;
-}
-
-.portfolio-color {
-  background-color: #797e87;
-}
-
-#color-overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: black;
-   opacity: 0.6;
-}
-
-
-#modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left:0;
-    padding-top: 60px;
-    width: auto; /* Full width */
-    height: auto; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-.img-size {
-  max-width: 90vw;
-  max-height: 90vh;
-  position: fixed;
-  height: auto;
-  width: auto;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-
-
-////////// Media for welcome pages/////////////
-// @media (max-width: 480px) {
-//
-//   .buisness {
-//     margin-top: 20px;
-//   }
-//
-//   .buisness-link {
-//     margin-left: 5%;
-//     padding: 8px;
-//   }
-//
-// }
-// @media (max-width: 767px) {
-
-  ///////// index page ///////////
-
-  // .buisness-link {
-  //   padding: 15px;
-  // }
-  //
-  // .buisness-p {
-  //   margin-left: 9%;
-  // }
-
-  //////// About Page ///////////
-
-
-//   .flex-container {
-//     padding: 0px !important;
-//   }
-//
-//   .about-img {
-//     padding: 0 0 15px 0 !important;
-//     margin-top: -15px;
-//   }
-//
-//   .about-p {
-//     padding-bottom: 10px;
-//   }
-//
-//
-// }
