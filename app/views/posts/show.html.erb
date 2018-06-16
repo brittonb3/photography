@@ -1,3 +1,9 @@
-<h1><%= @post.title %></h1>
- <p><%= @post.body %></p>
-  <%= image_tag(@post.image, :size => "260x180") %>
+<section class="container-fluid show-container">
+  <header>
+    <h1 class="blog-show-head"><%= @post.title %></h1>
+  </header>
+  <main>
+    <%= image_tag(@post.image, :class => "blog-show-img") %>
+    <p class="blog-show-body"><%= @post.body %></p>
+  </main>
+</section>

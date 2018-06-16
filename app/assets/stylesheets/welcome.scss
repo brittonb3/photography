@@ -78,6 +78,7 @@
   text-align: center;
   margin: 0;
   margin-top: 30px;
+  color: #fff;
 }
 
 
@@ -104,7 +105,7 @@
   background-size: cover;
 }
 
-.points-price {
+.points-port {
   background-image: url("Britt_b&w_com.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -119,7 +120,7 @@
 }
 
 .points-blog-link,
- .points-price-link,
+ .points-port-link,
  .points-print-link {
   display: block;
   height: 100%;
@@ -141,6 +142,7 @@
   margin-top: 60px;
   font-family: 'Cinzel', serif;
   border-bottom: solid 1px #fff;
+  color: #fff;
 }
 
 .port-nav {
@@ -187,19 +189,27 @@
   margin-top: 60px;
   border-bottom: 1px solid #fff;
   margin-bottom: 0;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
 .about-img {
   max-width: 100%;
+  margin: 0;
 }
 
 .about-sm-head {
   margin: 10px;
   text-align: left;
   border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: 'Cinzel', serif;
 }
 
 .about-p {
   text-align: left;
   margin: 10px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2px;
 }

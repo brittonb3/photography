@@ -1,20 +1,19 @@
-<section class="container-fluid" id="blog-container" >
-  <div class="row">
-      <h1 class="col-xs-12 text-center blog-head">Great Britton Blog</h1>
-      <div class="col-xs-12 col-sm-8 text-center blog-posts">
-        <% @posts.each do |post| %>
-          <div class=" col-sm-12 posts-blog-page" >
-            <h3><%= link_to post.title, post %></h3>
-              <%= link_to image_tag(post.image, :class => "col-xs-12"), post %>
-            <p>
-              <%= post.body.truncate(150,separator: /\s/) %>
-            </p>
-          </div>
-        <% end %>
+<section class="container-fluid">
+  <header>
+    <h1 class="blog-head">Blog</h1>
+  </header>
+  <nav class="blog-nav">
+    <a href="#" class="blog-links">Recent</a>
+    <a href="#" class="blog-links">Popular</a>
+    <a href="#" class="blog-links">What</a>
+    <a href="#" class="blog-links">Cityscape</a>
+  </nav>
+  <main>
+    <% @posts.each do |post| %>
+      <div class="blog-posts">
+        <h3><%= link_to post.title, post, :class => "blog-title" %></h3>
+        <%= link_to image_tag(post.image,  :class => "blog-image"), post %>
       </div>
-      <div class="col-xs-12 col-sm-4 text-center blog-list">
-        <h3>list</h3>
-      
-
-  </div>
+    <% end %>
+  </main>
 </section>
