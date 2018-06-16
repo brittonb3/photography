@@ -4,77 +4,44 @@
 
 //////// Contact Page ////////////
 
-.heading {
-  padding: 0 40px !important;
-  background-color: #797e87;
-}
-
-.contact-img {
-  padding: 0;
-}
-
-.touch {
-  margin: 0;
-  padding-top: 16px;
-  border-bottom: solid 1px #fff;
-  font-family: 'Cinzel', serif;
-}
-
 .contact-social {
-  float: left;
-  margin-bottom: 25px;
-  box-sizing: border-box;
-}
-
-.contact-img {
   padding: 0 !important;
+  margin: 10px;
 }
-
-.contact-background {
-    background: url("little_gy.jpg") no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: right 100px;
-    height: 100%;
-}
-
-#contact {
-  margin-top: 6em;
-}
-
-.jumbotron {
-  background-color: #252526 !important;
-}
-
-h1, h2, h3, h4, h5, p{
-  color: #fff !important;
-}
-
-.social-col-1, .social-col-2{
-    padding: 0 !important;
-    padding-left: 33px !important;
+.touch {
+  margin: 10px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: 'Cinzel', serif !important;
 }
 
 .social-label {
   display: inline-block;
-  font-size: 14px;
-  margin: 0;
-  padding-left: 12px;
-  font-family: 'Playfair Display', serif;
+  margin-left: 10px;
   letter-spacing: 0.5px;
+  font-family: 'Playfair Display', serif;
 }
 
-.labels {
-  color: #fff;
-  margin-top: 1em;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 1px;
+.face-social {
+  margin-left: 18px;
+}
+
+.insta-social {
+  margin-left: 12px;
+}
+
+.social-container {
+  padding: 0 !important;
 }
 
 .label-box {
   border-radius: 8px !important;
+}
+
+.labels {
+  color: #fff;
+  font-family: 'Cinzel', serif !important;
 }
 
 .button {
@@ -89,18 +56,3 @@ form input[type=submit]:hover, a.button:hover, a:link.button:hover, a:visited.bu
   opacity: 0.7;
   background-color: black !important;
 }
-
-
-
-////////// Contac Media Query //////////
-
-@media (max-width: 768px) {
-      .col-xs-12.text-right, .col-xs-12.text-left {
-              text-align: center;
-       }
-
-       .social-col-1, .social-col-2{
-           padding: 0 !important;
-       }
-
-    }
