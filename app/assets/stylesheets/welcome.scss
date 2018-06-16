@@ -177,43 +177,29 @@
 
 ///////// About /////////////
 
-.bio-container {
-  background-color: #797e87;
-  margin-top: 60px;
-  padding: 0 40px !important;
+.about-section {
+  display: block;
+  text-align: center;
+  padding: 0 !important;
 }
 
-.bio-top-header {
-  margin-top: 40px;
-  font-family: 'Cinzel Decorative', cursive;
+.about-head {
+  margin-top: 60px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0;
 }
 
 .about-img {
-  padding: 0 0 0 25px !important;
-  margin-top: -15px;
-  // margin-top: 70px;
-  // min-width: 500px;
-  // min-height: 295px;
+  max-width: 100%;
 }
 
-.bio-div {
-  padding: 0 40px !important;
-  margin-top: 50px;
-}
-
-.bio-head {
-  border-bottom: solid 1px #fff;
-  padding: 7px 0;
-  font-family: 'Cinzel', serif;
-  margin: 0;
+.about-sm-head {
+  margin: 10px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
 }
 
 .about-p {
-  margin-top: 15px;
-  font-family: 'Playfair Display', serif;
-  word-spacing: 1.5px;
-}
-
-.about-brand {
-  padding: 0 !important;
+  text-align: left;
+  margin: 10px;
 }

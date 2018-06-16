@@ -39,7 +39,7 @@ html, body{
 #header {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 15px 15px 15px 7px;
   font-size: 18px;
   line-height: 20px;
   width: auto;
@@ -166,7 +166,7 @@ html, body{
     cursor: pointer;
     display: inline-block;
     box-shadow: none;
-
+    margin-top: 3px;
 }
 
 .navbar-default .navbar-nav > li > a {
