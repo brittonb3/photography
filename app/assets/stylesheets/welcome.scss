@@ -4,8 +4,6 @@
 
 
 ///////// Index Page ////////////
-
-
 .back-img {
   background-image: url('_BMB4824.jpg');
   background-repeat: no-repeat;
@@ -174,6 +172,7 @@
 
 .port-img {
   width: 100%;
+  border: solid 1px #fff;
 }
 
 
@@ -212,4 +211,49 @@
   color: #fff;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.2px;
+}
+
+///////////// Media Queries ////////////
+@media (min-width: 768px) {
+
+  ////// Index ///////////
+  .points {
+    width: 33.33%;
+    display: inline-flex;
+    padding-bottom: 5px;
+  }
+
+  .points-blog-link, .points-port-link, .points-print-link {
+    width: 100%;
+  }
+
+//////// Portfolio //////////
+
+  .port-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  /////// About //////
+
+  .about-img, .about-main{
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .about-sm-head, .about-p {
+    margin: 10px 0;
+  }
+
+
+}
+
+
+@media (min-width: 1080px) {
+
+  .port-column {
+    flex: 25%;
+    max-width: 25%;
+  }
+
 }
