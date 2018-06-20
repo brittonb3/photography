@@ -37,6 +37,9 @@
   text-align: center;
 }
 
+.recent-blog {
+  display: none;
+}
 
 /////////////// Post Blog Show ////////////
 
@@ -58,4 +61,28 @@
 .blog-show-body {
   color: #fff;
   margin: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+  .blog-posts {
+    float: left;
+    width: 70%;
+  }
+
+  .recent-blog {
+    display: inline-block;
+    width: 25%;
+    float: right;
+    color: #fff;
+  }
+
+  .recent-blog h1 {
+    border-bottom: solid 1px #fff;
+  }
+  .recent {
+    display: none;
+  }
+
 }

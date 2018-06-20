@@ -3,17 +3,22 @@
     <h1 class="blog-head">Blog</h1>
   </header>
   <nav class="blog-nav">
-    <a href="#" class="blog-links">Recent</a>
+    <a href="#" class="blog-links recent">Recent</a>
     <a href="#" class="blog-links">Popular</a>
     <a href="#" class="blog-links">What</a>
     <a href="#" class="blog-links">Cityscape</a>
   </nav>
   <main>
+    <div class="recent-blog">
+      <h1 class="text-center">Hi</h1>
+      <a href="#">New Post</a>
+    </div>
     <% @posts.each do |post| %>
       <div class="blog-posts">
         <h3><%= link_to post.title, post, :class => "blog-title" %></h3>
         <%= link_to image_tag(post.image,  :class => "blog-image"), post %>
       </div>
     <% end %>
+
   </main>
 </section>
