@@ -12,40 +12,43 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top slow" id="nav">
-      <div class="container-fluid">
-        <input type="checkbox" id="navbar-toggle-cbox">
-        <div class="navbar-header">
-          <button for="navbar-toggle-cbox" id="nav-ham" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-          <a class="navbar-brand" id="header" href="/">Great Britton Photography</a>
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top slow" id="nav">
+        <div class="container-fluid">
+          <input type="checkbox" id="navbar-toggle-cbox">
+          <div class="navbar-header">
+            <button for="navbar-toggle-cbox" id="nav-ham" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" id="header" href="/">Great Britton Photography</a>
+          </div>
+          <div id="navbar" class="navbar-right navbar-collapse collapse ">
+            <ul class="nav navbar-nav">
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contacts/new">Contact</a></li>
+              <li><a href="/posts">Blog</a></li>
+            </ul>
+          </div>
         </div>
-        <div id="navbar" class="navbar-right navbar-collapse collapse ">
-          <ul class="nav navbar-nav">
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contacts/new">Contact</a></li>
-            <li><a href="/posts">Blog</a></li>
-          </ul>
+      </nav> <!-- /Nabvar -->
+
+
+      <%= yield %>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container text-center foot-container">
+          <a href="https://www.instagram.com/greatbritton85/" class="social" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/GreatBritton85" class="social" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/britt.baumann.7" class="social" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <p class="foot-copyright"><small> &copy; 2018 Britton Baumann | All Rights Reserved </small></p>
         </div>
-      </div>
-    </nav> <!-- /Nabvar -->
+      </footer>
+    </div>
 
-
-    <%= yield %>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container text-center">
-        <a href="https://www.instagram.com/greatbritton85/" class="social" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/GreatBritton85" class="social" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/britt.baumann.7" class="social" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-        <p class="foot-copyright"><small> &copy; 2018 Britton Baumann | All Rights Reserved </small></p>
-      </div>
-    </footer>
   </body>
 </html>

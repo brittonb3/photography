@@ -21,11 +21,28 @@
 // font-family: 'Cinzel', serif;
 // font-family: 'Cinzel Decorative', cursive;
 // font-family: 'Spectral SC', serif;
+* {
+  box-sizing: border-box;
+}
+
+*::before
+*::after {
+  box-sizing: border-box;
+}
 
 html, body{
   background-color: #252526;
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+.main-container {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 70px;
 }
 
 ///////////// Navbar ////////////////
@@ -190,12 +207,17 @@ html, body{
 footer {
   color: #fff;
   border-top: solid 1px #fff;
-  position: block;
+  position: absolute;
   width: 100%;
   bottom: 0;
   background-color: inherit;
+  margin-top: 10px;
+}
+
+.foot-container {
   padding-top: 10px;
 }
+
 
 
 

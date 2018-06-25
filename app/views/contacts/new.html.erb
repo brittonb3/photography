@@ -1,45 +1,40 @@
-
-<section class="container-fluid">
-  <div class="row">
-      <%= image_tag ( "Britt_b&w_cam1.jpg"), :class => "contact-img" %>
-      <h4 class="text-left touch">WAYS TO GET IN TOUCH</h4>
-      <div class="col-xs-12 contact-social">
-        <div class="col-xs-12 col-sm-6 text-left social-col-1 social-container">
-          <a href="https://www.facebook.com/britt.baumann.7" class="social-con" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i><p class="social-label face-social"> Britt Baumann</p><br/></a>
-          <a href="https://www.instagram.com/greatbritton85/" class="social-con" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i><p class="social-label insta-social">@greatbritton85</p><br/></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 text-left social-col-2 social-container">
-          <a href="https://twitter.com/GreatBritton85" class="social-con" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i><p class="social-label">@greatbritton85</p><br/></a>
-          <a href="mailto:GreatBrittonPhotography@gmail.com" class="social-con" target="_top"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i><p class="social-label">GreatBrittonPhotography@gmail.com</p><br/></a>
-        </div>
-      </div>
-      <h4 class="text-left touch">CONTACT FORM</h4>
-      <div class="col-xs-12 text-center">
-        <%= form_for @contact do |f| %>
-          <%= f.label :name, :class => 'labels' %><br />
-          <%= f.text_field :name, :class => 'label-box', required: true %>
-
-          <br />
-
-          <%= f.label :email, :class => 'labels' %><br />
-          <%= f.email_field :email, :class => 'label-box', required: true %>
-
-          <br />
-
-          <%= f.label :message, :class => 'labels' %><br />
-          <%= f.text_area :message, :class => 'label-box', as: :text %>
-
-          <br />
-
-          <div class="hidden">
-            <%= f.label :nickname %><br />
-            <%= f.text_field :nickname, hint: 'leave this field blank' %>
-          </div>
-
-          <%= f.submit 'Send Message', class: "button" %><br />
-
-        <% end %>
-      </div>
+<section class="container-fluid contact-section">
+  <%= image_tag ( "Britt_b&w_cam1.jpg"), :class => "contact-img" %>
+  <h4 class="text-left touch">WAYS TO GET IN TOUCH</h4>
+  <div class="contact-social">
+    <div class="col-xs-12 col-sm-6 text-left social-col-1 social-container">
+      <a href="https://www.facebook.com/britt.baumann.7" class="social-con" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i><p class="social-label face-social"> Britt Baumann</p><br/></a>
+      <a href="https://www.instagram.com/greatbritton85/" class="social-con" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i><p class="social-label insta-social">@greatbritton85</p><br/></a>
     </div>
-  </div>
+    <div class="col-xs-12 col-sm-6 text-left social-col-2 social-container">
+      <a href="https://twitter.com/GreatBritton85" class="social-con" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i><p class="social-label">@greatbritton85</p><br/></a>
+      <a href="mailto:GreatBrittonPhotography@gmail.com" class="social-con" target="_top"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i><p class="social-label">GreatBrittonPhotography@gmail.com</p><br/></a>
+    </div>
+    <h4 class="text-left touch">CONTACT FORM</h4>
+    <div class="col-xs-12 text-center">
+      <%= form_for @contact do |f| %>
+        <%= f.label :name, :class => 'labels' %><br />
+        <%= f.text_field :name, :class => 'label-box', required: true %>
+
+        <br />
+
+        <%= f.label :email, :class => 'labels' %><br />
+        <%= f.email_field :email, :class => 'label-box', required: true %>
+
+        <br />
+
+        <%= f.label :message, :class => 'labels' %><br />
+        <%= f.text_area :message, :class => 'label-box', as: :text %>
+
+        <br />
+
+        <div class="hidden">
+          <%= f.label :nickname %><br />
+          <%= f.text_field :nickname, hint: 'leave this field blank' %>
+        </div>
+
+        <%= f.submit 'Send Message', class: "button" %><br />
+
+      <% end %>
+    </div>
 </section>
