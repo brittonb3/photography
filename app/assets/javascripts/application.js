@@ -52,9 +52,23 @@
 
 
     ///////////// portfolio function ///////////////
+    let portImage = document.getElementsByClassName("port-img");
+    let modalContent = document.getElementById("modal-content");
+    const mainModal = document.getElementById("modal-container");
 
+    function portImageDisplay(e) {
+      let newImage = this.src;
+      modalContent.src = newImage;
+      mainModal.style.visibility = "visible";
+    }
 
+    function portImageHide(e) {
+      mainModal.style.visibility = "hidden";
+    }
 
+    mainModal.addEventListener("click", portImageHide)
 
-
+    for(let i = 0; i < portImage.length; i++) {
+      portImage[i].addEventListener("click", portImageDisplay);
+    }
 });
