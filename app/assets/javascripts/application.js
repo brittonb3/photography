@@ -24,14 +24,8 @@
     let navbar = document.getElementById('nav');
     let navButton = document.getElementById('nav-ham');
 
-    window.addEventListener("scroll", function(){
-       let st = window.pageYOffset || document.documentElement.scrollTop;
-       if (st > 20){
-           navbar.style.backgroundColor = "rgba(0,0,0, 0.8)";
-       } else if (st < 20) {
-          navbar.style.backgroundColor = "transparent";
-       }
-    }, false);
+
+
 
     window.addEventListener("resize", function(){
       let wSize = window.innerWidth;
@@ -52,23 +46,61 @@
 
 
     ///////////// portfolio function ///////////////
-    let portImage = document.getElementsByClassName("port-img");
     let modalContent = document.getElementById("modal-content");
-    const mainModal = document.getElementById("modal-container");
+    let photoList = document.getElementsByClassName('port-row')[0];
+    let mainModal = document.getElementById('modal-container');
+    let nextButton = document.getElementById('port-next');
+    let prevButton = document.getElementById('port-prev');
+    let imageArray = document.getElementsByClassName('img-real');
+    let currentImage = null;
+    let lastImageIndex = null;
 
-    function portImageDisplay(e) {
-      let newImage = this.src;
-      modalContent.src = newImage;
-      mainModal.style.visibility = "visible";
+    photoList.addEventListener('click', function(event){
+      currentImage = parseInt(event.target.dataset.number);
+      console.log(currentImage);
+
+      if(event.target.parentElement.className === 'port-column') {
+        modalContent.src = event.target.src;
+        mainModal.style.visibility = 'visible';
+      }
+    });
+
+    mainModal.addEventListener('click', function(event) {
+      if(event.target.id === 'modal-container') {
+        mainModal.style.visibility = 'hidden';
+      }
+    })
+
+
+    let nextImage = function() {
+      currentImage ++;
+
+      for(let i = 0; i < imageArray.length; i++){
+          if( currentImage >= imageArray.length ) {
+            modalContent.src = imageArray[0].src;
+            currentImage = 0;
+            console.log(currentImage);
+          } else if (imageArray[currentImage].dataset.number == currentImage) {
+            modalContent.src = imageArray[currentImage].src;
+          }
+      }
+
     }
 
-    function portImageHide(e) {
-      mainModal.style.visibility = "hidden";
-    }
+    let prevImage = function() {
+      currentImage --;
 
-    mainModal.addEventListener("click", portImageHide)
-
-    for(let i = 0; i < portImage.length; i++) {
-      portImage[i].addEventListener("click", portImageDisplay);
+      for(let i = 0; i < imageArray.length; i++){
+        if( currentImage < 0 ) {
+            modalContent.src = imageArray[imageArray.length - 1].src;
+            currentImage = imageArray.length - 1;
+          } else if (imageArray[currentImage].dataset.number == currentImage) {
+            modalContent.src = imageArray[currentImage].src;
+          }
+      }
     }
+    nextButton.addEventListener('click', nextImage);
+    prevButton.addEventListener('click', prevImage);
+
+
 });

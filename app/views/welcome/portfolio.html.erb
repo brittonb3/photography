@@ -10,28 +10,27 @@
   </nav>
   <main>
     <div id="modal-container">
+      <a id="port-prev">prev</a>
       <%= image_tag("", :alt => "Britt", :id => "modal-content") %>
+      <a id="port-next">next</a>
     </div>
     <div class="port-row">
       <div class="port-column">
-        <%= image_tag("bath_1.jpg", :alt => "Modern bathroom", :class => "port-img") %>
-        <%= image_tag("bar_1.jpg", :alt => "Bar", :class => "port-img") %>
-        <%= image_tag("living_1.jpg", :alt => "Livingroom", :class => "port-img") %>
+        <%= image_tag("bath_1.jpg", :alt => "Modern bathroom", :class => "port-img img-real", :data => {:number => 0}) %>
+        <%= image_tag("bar_1.jpg", :alt => "Bar", :class => "port-img img-real", :data => {:number => 1}) %>
+        <%= image_tag("living_1.jpg", :alt => "Livingroom", :class => "port-img img-real", :data => {:number => 2}) %>
       </div>
       <div class="port-column">
-        <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "port-img") %>
-        <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "port-img") %>
-        <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "port-img") %>
+        <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "port-img img-real",:data => {:number => 3}) %>
+        <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "port-img img-real", :data => {:number => 4}) %>
+        <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "port-img img-real", :data => {:number => 5}) %>
       </div>
       <div class="port-column">
-        <%= image_tag("master_2.jpg", :alt => "Master bed", :class => "port-img") %>
-        <%= image_tag("_BMB4824.jpg", :alt => "Britt", :class => "port-img") %>
-        <%= image_tag("_BMB4824.jpg", :alt => "Britt", :class => "port-img") %>
+        <%= image_tag("master_2.jpg", :alt => "Master bed", :class => "port-img img-real", :data => {:number => 6}) %>
+        <%= image_tag("_BMB4824.jpg", :alt => "Britt", :class => "port-img img-real", :data => {:number => 7}) %>
       </div>
       <div class="port-column">
-        <%= image_tag("bath_1.jpg", :alt => "Modern bathroom", :class => "port-img") %>
-        <%= image_tag("bar_1.jpg", :alt => "Bar", :class => "port-img") %>
-        <%= image_tag("living_1.jpg", :alt => "Livingroom", :class => "port-img") %>
+
       </div>
     </div>
   </main>
