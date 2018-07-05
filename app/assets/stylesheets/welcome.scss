@@ -153,7 +153,7 @@
   padding: 5px;
 }
 
-.port-row {
+.port-row, .real-estate-port, .headshot-port {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -170,10 +170,22 @@
   vertical-align: middle;
 }
 
-.port-img {
+.img-real, .img-head {
   width: 100%;
   border: solid 1px #fff;
 }
+
+.port-page {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+
+
+
 
 //////// Port Modal /////////
 
@@ -199,8 +211,8 @@
   width: auto;
   height: auto;
   z-index: 99992;
-
 }
+
 
 
 ///////// About /////////////

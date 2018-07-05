@@ -3,10 +3,10 @@
     <h1 class="port-header">Portfolio</h1>
   </header>
   <nav class="port-nav">
-    <a href="#" class="port-links">Real Estate</a>
-    <a href="#" class="port-links">Headshots</a>
-    <a href="#" class="port-links">Landscape</a>
-    <a href="#" class="port-links">Cityscape</a>
+    <a href="#" id="real-estate-link" class="port-links">Real Estate</a>
+    <a href="#" id="headshot-link" class="port-links">Headshots</a>
+    <a href="#" id="Landscape-link" class="port-links">Landscape</a>
+    <a href="#" id="Cityscape-link" class="port-links">Cityscape</a>
   </nav>
   <main>
     <div id="modal-container">
@@ -14,24 +14,53 @@
       <%= image_tag("", :alt => "Britt", :id => "modal-content") %>
       <a id="port-next">next</a>
     </div>
-    <div class="port-row">
-      <div class="port-column">
-        <%= image_tag("bath_1.jpg", :alt => "Modern bathroom", :class => "port-img img-real", :data => {:number => 0}) %>
-        <%= image_tag("bar_1.jpg", :alt => "Bar", :class => "port-img img-real", :data => {:number => 1}) %>
-        <%= image_tag("living_1.jpg", :alt => "Livingroom", :class => "port-img img-real", :data => {:number => 2}) %>
-      </div>
-      <div class="port-column">
-        <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "port-img img-real",:data => {:number => 3}) %>
-        <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "port-img img-real", :data => {:number => 4}) %>
-        <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "port-img img-real", :data => {:number => 5}) %>
-      </div>
-      <div class="port-column">
-        <%= image_tag("master_2.jpg", :alt => "Master bed", :class => "port-img img-real", :data => {:number => 6}) %>
-        <%= image_tag("_BMB4824.jpg", :alt => "Britt", :class => "port-img img-real", :data => {:number => 7}) %>
-      </div>
-      <div class="port-column">
+    <section>
+      <div class="port-row">
+        <section class="real-estate-port port-page active">
+          <div class="port-column">
+            <%= image_tag("bath_1.jpg", :alt => "Modern bathroom", :class => "img-real", :data => {:number => 0}) %>
+            <%= image_tag("bar_1.jpg", :alt => "Bar", :class => "img-real", :data => {:number => 1}) %>
+            <%= image_tag("living_1.jpg", :alt => "Livingroom", :class => "img-real", :data => {:number => 2}) %>
+          </div>
+          <div class="port-column">
+            <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "img-real",:data => {:number => 3}) %>
+            <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "img-real", :data => {:number => 4}) %>
+            <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "img-real", :data => {:number => 5}) %>
+          </div>
+          <div class="port-column">
+            <%= image_tag("master_2.jpg", :alt => "Master bed", :class => "img-real", :data => {:number => 6}) %>
+            <%= image_tag("_BMB4824.jpg", :alt => "Britt", :class => "img-real", :data => {:number => 7}) %>
+          </div>
+          <div class="port-column">
+            <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "img-real",:data => {:number => 8}) %>
+            <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "img-real", :data => {:number => 9}) %>
+            <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "img-real", :data => {:number => 10}) %>
+          </div>
+        </section>
 
+        <section class="headshot-port port-page">
+          <div class="port-column">
+            <%= image_tag("bar_1.jpg", :alt => "Bar", :class => "img-head", :data => {:number => 0}) %>
+            <%= image_tag("bath_1.jpg", :alt => "Modern bathroom", :class => "img-head", :data => {:number => 1}) %>
+            <%= image_tag("living_1.jpg", :alt => "Livingroom", :class => "img-head", :data => {:number => 2}) %>
+          </div>
+          <div class="port-column">
+            <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "img-head",:data => {:number => 3}) %>
+            <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "img-head", :data => {:number => 4}) %>
+            <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "img-head", :data => {:number => 5}) %>
+          </div>
+          <div class="port-column">
+            <%= image_tag("master_2.jpg", :alt => "Master bed", :class => "img-head", :data => {:number => 6}) %>
+            <%= image_tag("_BMB4824.jpg", :alt => "Britt", :class => "img-head", :data => {:number => 7}) %>
+          </div>
+          <div class="port-column">
+            <%= image_tag("kitchen_1.jpg", :alt => "Kitchen with sitting area", :class => "img-head",:data => {:number => 8}) %>
+            <%= image_tag("master_1.jpg", :alt => "Modern bedroom", :class => "img-head", :data => {:number => 9}) %>
+            <%= image_tag("kitchen_2.jpg", :alt => "Kitchen showing appliances", :class => "img-head", :data => {:number => 10}) %>
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
+
   </main>
 </div>

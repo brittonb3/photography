@@ -51,13 +51,16 @@
     let mainModal = document.getElementById('modal-container');
     let nextButton = document.getElementById('port-next');
     let prevButton = document.getElementById('port-prev');
-    let imageArray = document.getElementsByClassName('img-real');
+    let imageArray ;
     let currentImage = null;
     let lastImageIndex = null;
 
+
     photoList.addEventListener('click', function(event){
       currentImage = parseInt(event.target.dataset.number);
-      console.log(currentImage);
+      currentClass = event.target.className;
+      imageArray = document.getElementsByClassName(currentClass);
+
 
       if(event.target.parentElement.className === 'port-column') {
         modalContent.src = event.target.src;
@@ -101,6 +104,44 @@
     }
     nextButton.addEventListener('click', nextImage);
     prevButton.addEventListener('click', prevImage);
+
+
+///////////// Port link function /////////////////
+let portLinks = document.getElementsByClassName('port-links');
+let portPage = document.getElementsByClassName('port-page');
+let realEstatePage = document.getElementsByClassName('real-estate-port')[0];
+let headShotPage = document.getElementsByClassName('headshot-port')[0];
+
+const handleClick = (e) => {
+  e.preventDefault();
+  const active = document.querySelector('.active');
+  if(active){
+    active.classList.remove('active');
+  }
+
+  switch (e.target.id) {
+    case 'real-estate-link':
+      realEstatePage.classList.add('active');
+      break;
+    case 'headshot-link':
+      headShotPage.classList.add('active');
+      break;
+    case 'landscape-link':
+      landscapePage.classList.add('active');
+      break;
+    case 'cityscape-link':
+      cityscapePage.classList.add('active');
+      break;
+  }
+
+}
+
+
+for(let i = 0; i < portLinks.length; i++) {
+  portLinks[i].addEventListener('click', handleClick);
+}
+
+
 
 
 });
