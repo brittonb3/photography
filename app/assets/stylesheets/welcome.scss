@@ -5,7 +5,7 @@
 
 ///////// Index Page ////////////
 .back-img {
-  background-image: url('_BMB4824.jpg');
+  background-image: url('Britt_home.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +17,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  opacity: 0.8;
+
 }
 
 .buisness {
@@ -111,7 +111,7 @@
 }
 
 .points-print {
-  background-image: url("_BMB2916.jpg");
+  background-image: url("NYC_mem_city.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -153,7 +153,7 @@
   padding: 5px;
 }
 
-.port-row, .real-estate-port, .headshot-port {
+.port-row, .real-estate-port, .headshot-port, .landscape-port, .cityscape-port, {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -170,7 +170,7 @@
   vertical-align: middle;
 }
 
-.img-real, .img-head {
+.img-real, .img-head, .img-land, .img-city {
   width: 100%;
   border: solid 1px #fff;
 }

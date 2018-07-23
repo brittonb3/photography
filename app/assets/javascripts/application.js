@@ -111,6 +111,8 @@ let portLinks = document.getElementsByClassName('port-links');
 let portPage = document.getElementsByClassName('port-page');
 let realEstatePage = document.getElementsByClassName('real-estate-port')[0];
 let headShotPage = document.getElementsByClassName('headshot-port')[0];
+let landscapePage = document.getElementsByClassName('landscape-port')[0];
+let cityscapePage = document.getElementsByClassName('cityscape-port')[0];
 
 const handleClick = (e) => {
   e.preventDefault();
