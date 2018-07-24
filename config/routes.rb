@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'welcome#about'
   get 'portfolio' => 'welcome#portfolio'
+  get 'prints' => 'welcome#prints'
 
   root 'welcome#index'
 

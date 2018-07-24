@@ -31,7 +31,7 @@
 }
 
 html, body{
-  background-color: #252526;
+  background-color: #fff;
   height: 100%;
   width: 100%;
   position: relative;
@@ -205,12 +205,11 @@ html, body{
 ///////// footer /////////
 
 footer {
-  color: #fff;
-  border-top: solid 1px #fff;
+  color: #000;
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-color: inherit;
+  background-color: #d9d9db;
   margin-top: 10px;
 }
 

@@ -63,9 +63,15 @@
 
 .social {
   margin: 5px;
+  color: #fff;
 }
 
-.social:hover {
+.social-foot {
+  margin: 5px;
+  color: #000 !important;
+}
+
+.social:hover, .social-foot:hover {
   opacity: 0.6;
 }
 
@@ -104,7 +110,7 @@
 }
 
 .points-port {
-  background-image: url("small-bath.jpg");
+  background-image: url("Cloud_tree_land.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -139,8 +145,7 @@
   text-align: center;
   margin-top: 60px;
   font-family: 'Cinzel', serif;
-  border-bottom: solid 1px #fff;
-  color: #fff;
+  color: #000;
 }
 
 .port-nav {
@@ -151,6 +156,11 @@
 
 .port-links {
   padding: 5px;
+  color: #000 !important;
+}
+
+.port-links:hover {
+  opacity: 0.6;
 }
 
 .port-row, .real-estate-port, .headshot-port, .landscape-port, .cityscape-port, {
@@ -172,7 +182,6 @@
 
 .img-real, .img-head, .img-land, .img-city {
   width: 100%;
-  border: solid 1px #fff;
 }
 
 .port-page {
@@ -225,9 +234,8 @@
 
 .about-head {
   margin-top: 60px;
-  border-bottom: 1px solid #fff;
   margin-bottom: 0;
-  color: #fff;
+  color: #000;
   font-family: 'Playfair Display', serif;
 }
 
@@ -239,17 +247,25 @@
 .about-sm-head {
   margin: 10px;
   text-align: left;
-  border-bottom: 1px solid #fff;
-  color: #fff;
+  border-bottom: 1px solid #000;
+  color: #000;
   font-family: 'Cinzel', serif;
 }
 
 .about-p {
   text-align: left;
   margin: 10px;
-  color: #fff;
+  color: #000;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.2px;
+}
+
+
+
+///////Prints////////
+
+.prints {
+  margin-top: 100px;
 }
 
 ///////////// Media Queries ////////////

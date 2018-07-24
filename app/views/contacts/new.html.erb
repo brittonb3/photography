@@ -1,7 +1,8 @@
 <section class="container-fluid contact-section">
   <%= image_tag ( "NYC_man_city_crop.jpg"), :class => "contact-img" %>
-  <h4 class="text-left touch">WAYS TO GET IN TOUCH</h4>
+
   <div class="contact-social">
+    <h4 class="text-left touch">WAYS TO GET IN TOUCH</h4>
     <div class="col-xs-12 col-sm-6 text-left social-col-1 social-container">
       <a href="https://www.facebook.com/britt.baumann.7" class="social-con" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i><p class="social-label face-social"> Britt Baumann</p><br/></a>
       <a href="https://www.instagram.com/greatbritton85/" class="social-con" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i><p class="social-label insta-social">@greatbritton85</p><br/></a>
@@ -13,17 +14,17 @@
     <h4 class="text-left touch">CONTACT FORM</h4>
     <div class="col-xs-12 text-center">
       <%= form_for @contact do |f| %>
-        <%= f.label :name, :class => 'labels' %><br />
+        <%= f.label :name, 'Name :', :class => 'labels' %><br />
         <%= f.text_field :name, :class => 'label-box', required: true %>
 
         <br />
 
-        <%= f.label :email, :class => 'labels' %><br />
+        <%= f.label :email, 'Email :', :class => 'labels' %><br />
         <%= f.email_field :email, :class => 'label-box', required: true %>
 
         <br />
 
-        <%= f.label :message, :class => 'labels' %><br />
+        <%= f.label :message, 'Message :', :class => 'labels' %><br />
         <%= f.text_area :message, :class => 'label-box', as: :text %>
 
         <br />
