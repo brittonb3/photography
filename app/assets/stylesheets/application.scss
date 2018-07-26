@@ -37,6 +37,11 @@ html, body{
   position: relative;
 }
 
+.container-fluid {
+  padding: 0;
+  max-width: 1920px;
+}
+
 .main-container {
   min-height: 100vh;
   overflow: hidden;
@@ -50,6 +55,7 @@ html, body{
   margin: 0;
   border: none;
   background-color: rgba(0,0,0,0.8);
+  
 }
 
 

@@ -6,15 +6,21 @@
 //////////// Posts (Blog) index ///////////
 
 .blog-head {
-  color: #fff;
+  color: #000;
   text-align: center;
-  margin-top: 60px;
-  border-bottom: solid 1px #fff;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .blog-nav {
   display: flex;
   justify-content: space-around;
+  border-bottom: solid 1px #000;
+}
+
+.blog-links {
+  color: #000 !important;
+
 }
 
 .blog-posts {
@@ -23,6 +29,7 @@
 
 .blog-title {
   font-family: 'Cinzel', serif;
+  color: #000 !important;
 }
 
 .blog-image {
@@ -30,15 +37,20 @@
 }
 
 .blog-body {
-  color: #fff;
+  color: #000 !important;
   margin: 10px 0;
   padding: 10px 0;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #000;
   text-align: center;
 }
 
 .recent-blog {
   display: none;
+  color: #000 !important;
+}
+
+.new-post {
+  color: #000 !important;
 }
 
 /////////////// Post Blog Show ////////////
@@ -49,7 +61,7 @@
 }
 
 .blog-show-head {
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 60px 0 5px 0;
 }
@@ -59,7 +71,7 @@
 }
 
 .blog-show-body {
-  color: #fff;
+  color: #000;
   margin: 10px;
 }
 
@@ -79,7 +91,7 @@
   }
 
   .recent-blog h1 {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #00;
   }
   .recent {
     display: none;
