@@ -55,7 +55,7 @@ html, body{
   margin: 0;
   border: none;
   background-color: rgba(0,0,0,0.8);
-  
+  height: 60px;
 }
 
 
@@ -208,6 +208,21 @@ html, body{
   margin-left: 0px;
 }
 
+.logo-link {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px
+}
+
+.logo-2 {
+  display: none;
+}
+
+.logo {
+  height: 57px;
+  margin-top: 1px;
+}
+
 ///////// footer /////////
 
 footer {
@@ -232,6 +247,20 @@ footer {
 
 @media (min-width: 768px) {
 
+  .logo-link {
+    margin: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-2 {
+    display: inline-block;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
 
     .collapse {
       background-color: transparent;
