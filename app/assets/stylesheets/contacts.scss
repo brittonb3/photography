@@ -39,8 +39,11 @@
   color: #000 !important;
 }
 
-.social-con:hover {
-  opacity: 0.6;
+.social-con:hover{
+  .social-label {
+    color: #03dbdb;
+  }
+
 }
 
 .face-social {
@@ -79,8 +82,8 @@
 
 form input[type=submit]:hover, a.button:hover, a:link.button:hover, a:visited.button:hover,
 .button:focus {
-  opacity: 0.7;
-  background-color: black !important;
+  color: #000;
+  background-color: #03dbdb !important;
 }
 
 /////////// Media Queries ////////////
