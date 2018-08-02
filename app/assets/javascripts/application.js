@@ -51,6 +51,7 @@
     let mainModal = document.getElementById('modal-container');
     let nextButton = document.getElementById('port-next');
     let prevButton = document.getElementById('port-prev');
+    
     let imageArray ;
     let currentImage = null;
     let lastImageIndex = null;
@@ -69,7 +70,7 @@
     });
 
     mainModal.addEventListener('click', function(event) {
-      if(event.target.id === 'modal-container') {
+      if(event.target.id === 'modal-container' || event.target.id === 'close-modal') {
         mainModal.style.visibility = 'hidden';
       }
     })

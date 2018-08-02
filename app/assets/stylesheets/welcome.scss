@@ -83,7 +83,7 @@
   // font-family: 'Spectral SC', serif;
   // font-family: 'Cinzel Decorative', cursive;
   margin-left: 10%;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   margin: 20px 20px 5px 20px;
   color: #fff;
@@ -115,7 +115,7 @@
 }
 
 .points-port {
-  background-image: url("Cloud_tree_land.jpg");
+  background-image: url("Duluth_night_city.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,7 +165,7 @@
 }
 
 .port-links:hover {
-  opacity: 0.6;
+  color: #03dbdb !important;
 }
 
 .port-page {
@@ -197,6 +197,9 @@
   display: flex;
 }
 
+.img-city:hover, .img-land:hover, .img-real:hover {
+  opacity: 0.8;
+}
 
 
 
@@ -210,7 +213,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99991;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
@@ -219,12 +222,86 @@
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.8);
 }
+
 #modal-content {
-  max-width: 95%;
-  max-height: 95%;
+  position: inherit;
+  display: flex;
+  max-width: 100%;
+  max-height: 90%;
   width: auto;
   height: auto;
-  z-index: 99992;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-nav {
+  position: absolute;
+  width: 50%;
+  text-decoration: none;
+  z-index: 999999;
+  height: 25%;
+  margin-top: 0 auto;
+}
+
+#close-modal {
+  position: absolute;
+  top: 65px;
+  right: 5px;
+  z-index: 9999999;
+  height: 50px;
+  width: 50px;
+}
+
+.port-prev {
+  left: -1px;
+}
+
+.port-next {
+  right: 1px;
+}
+
+.prev-logo {
+  position: absolute;
+  top: 46%;
+  margin-left: 8px;
+}
+
+.next-logo {
+  position:  absolute;
+  top: 46%;
+  right: 0;
+  margin-right: 8px;
+}
+
+.modal-nav:hover {
+  .prev-logo, .next-logo {
+    color: #03dbdb;
+  }
+}
+
+
+.icon-bar {
+    position: absolute;
+    height: 2px;
+    width: 37%;
+    left: 33%;
+    background: #fff;
+    border-radius: 50px;
+}
+.top-bar {
+  transform: rotate(135deg);
+  top: 49%;
+}
+.bottom-bar {
+  transform: rotate(45deg);
+  top: 49%;
+}
+
+#close-modal:hover {
+  .icon-bar {
+    background: #03dbdb;
+  }
 }
 
 
@@ -287,9 +364,7 @@
     width: 100%;
   }
 
-  .buisness {
-    font-size: 120%;
-  }
+
 
 //////// Portfolio //////////
 

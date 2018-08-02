@@ -5,17 +5,21 @@
 
 //////////// Posts (Blog) index ///////////
 
+.blog-h1 {
+  margin-top: 30%;
+}
+
 .blog-head {
   color: #000;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
 }
 
 .blog-nav {
   display: flex;
   justify-content: space-around;
-  border-bottom: solid 1px #000;
 }
 
 .blog-links {
