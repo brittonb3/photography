@@ -51,7 +51,7 @@
     let mainModal = document.getElementById('modal-container');
     let nextButton = document.getElementById('port-next');
     let prevButton = document.getElementById('port-prev');
-    
+    let closeButton = document.getElementById('close-modal');
     let imageArray ;
     let currentImage = null;
     let lastImageIndex = null;
@@ -70,10 +70,12 @@
     });
 
     mainModal.addEventListener('click', function(event) {
-      if(event.target.id === 'modal-container' || event.target.id === 'close-modal') {
+      if(event.target.id === 'modal-container' || event.target.id === 'close-modal' || event.target.id === 'top-bar' || event.target.id === 'bottom-bar') {
         mainModal.style.visibility = 'hidden';
       }
+
     })
+
 
 
     let nextImage = function() {
@@ -114,26 +116,34 @@ let realEstatePage = document.getElementsByClassName('real-estate-port')[0];
 let headShotPage = document.getElementsByClassName('headshot-port')[0];
 let landscapePage = document.getElementsByClassName('landscape-port')[0];
 let cityscapePage = document.getElementsByClassName('cityscape-port')[0];
+let cityLink = document.getElementById('cityscape-link');
+let landscapeLink = document.getElementById('landscape-link');
+let realEstateLink = document.getElementById('real-estate-link');
 
 const handleClick = (e) => {
   e.preventDefault();
   const active = document.querySelector('.active');
+  const activeLink = document.querySelector('.active-color');
   if(active){
     active.classList.remove('active');
+    activeLink.classList.remove('active-color');
   }
 
   switch (e.target.id) {
     case 'real-estate-link':
       realEstatePage.classList.add('active');
+      realEstateLink.classList.add('active-color')
       break;
     case 'headshot-link':
       headShotPage.classList.add('active');
       break;
     case 'landscape-link':
       landscapePage.classList.add('active');
+      landscapeLink.classList.add('active-color');
       break;
     case 'cityscape-link':
       cityscapePage.classList.add('active');
+      cityLink.classList.add('active-color');
       break;
   }
 

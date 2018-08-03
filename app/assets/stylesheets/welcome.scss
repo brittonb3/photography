@@ -197,6 +197,10 @@
   display: flex;
 }
 
+.active-color {
+  color: #03dbdb !important;
+}
+
 .img-city:hover, .img-land:hover, .img-real:hover {
   opacity: 0.8;
 }
@@ -227,7 +231,7 @@
   position: inherit;
   display: flex;
   max-width: 100%;
-  max-height: 90%;
+  max-height: 80%;
   width: auto;
   height: auto;
   justify-content: center;
@@ -251,6 +255,10 @@
   z-index: 9999999;
   height: 50px;
   width: 50px;
+}
+
+.icon-bar {
+  z-index: 99999;
 }
 
 .port-prev {
@@ -340,6 +348,7 @@
   color: #000;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.2px;
+  margin-bottom: 20px;
 }
 
 

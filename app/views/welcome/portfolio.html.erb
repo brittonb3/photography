@@ -3,7 +3,7 @@
     <h1 class="port-header">Portfolio</h1>
   </header>
   <nav class="port-nav">
-    <a href="#" id="cityscape-link" class="port-links">Cityscape</a>
+    <a href="#" id="cityscape-link" class="port-links active-color">Cityscape</a>
       <a href="#" id="landscape-link" class="port-links">Landscape</a>
     <a href="#" id="real-estate-link" class="port-links">Real Estate</a>
     <!-- <a href="#" id="headshot-link" class="port-links">Headshots</a> -->
@@ -11,8 +11,10 @@
   <main>
     <div id="modal-container">
         <%= image_tag("", :alt => "Britt", :id => "modal-content" ) %>
-        <a id="close-modal"><span class="icon-bar top-bar"></span>
-        <span class="icon-bar bottom-bar"></span></a>
+        <a id="close-modal">
+          <span id="top-bar" class="icon-bar top-bar"></span>
+          <span id="bottom-bar" class="icon-bar bottom-bar"></span>
+        </a>
         <a class="modal-nav port-prev" id="port-prev"><i class="fa fa-chevron-left fa-2x prev-logo" aria-hidden="true"></i></a>
         <a class="modal-nav port-next" id="port-next" ><i class="fa fa-chevron-right fa-2x next-logo" aria-hidden="true"></i></a>
     </div>
