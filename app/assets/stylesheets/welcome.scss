@@ -202,7 +202,7 @@
 }
 
 .img-city:hover, .img-land:hover, .img-real:hover {
-  opacity: 0.8;
+  cursor: pointer;
 }
 
 
@@ -283,8 +283,12 @@
 }
 
 .modal-nav:hover {
+
+  cursor: pointer;
+
   .prev-logo, .next-logo {
     color: #03dbdb;
+    cursor: pointer;
   }
 }
 
@@ -307,8 +311,12 @@
 }
 
 #close-modal:hover {
+
+  cursor: pointer;
+
   .icon-bar {
     background: #03dbdb;
+    cursor: pointer;
   }
 }
 
