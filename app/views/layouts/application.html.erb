@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   </head>
 
-  <body>
+  <body oncontextmenu="return false;">
     <div class="main-container">
       <!-- Navbar -->
       <nav class="navbar navbar-default navbar-fixed-top slow" id="nav">
@@ -38,7 +38,10 @@
         </div>
       </nav> <!-- /Nabvar -->
 
-
+      <div id="copy-alert">
+        <p>These images are protected by copyright. All
+          rights reserved. Unauthorized use is prohibited.</p>
+      </div>
       <%= yield %>
 
       <!-- Footer -->
